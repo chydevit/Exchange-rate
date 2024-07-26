@@ -1,0 +1,141 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+.converter {
+  margin: 20px auto; /* Center the converter horizontally */
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White background for the converter */
+  width: 80%; /* Default width */
+  max-width: 500px; /* Maximum width */
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#result {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+img {
+  border-radius: 10px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+/* Responsive styles */
+
+/* Mobile S (320px and up) */
+@media (max-width: 479px) {
+  .converter {
+    width: 90%;
+  }
+
+  label {
+    font-size: 16px; /* Smaller font size for smaller screens */
+  }
+
+  input,
+  select,
+  button {
+    padding: 8px; /* Smaller padding for smaller screens */
+    font-size: 14px; /* Smaller font size for smaller screens */
+  }
+}
+
+/* Mobile M (480px and up) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .converter {
+    width: 85%;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input,
+  select,
+  button {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+/* Mobile L (768px and up) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .converter {
+    width: 80%;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input,
+  select,
+  button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+/* Tablet (1024px and up) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .converter {
+    width: 70%;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  input,
+  select,
+  button {
+    padding: 14px;
+    font-size: 18px;
+  }
+}
+
+/* Laptop (1280px and up) */
+@media (min-width: 1280px) {
+  .converter {
+    width: 60%;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  input,
+  select,
+  button {
+    padding: 15px;
+    font-size: 18px;
+  }
+}
